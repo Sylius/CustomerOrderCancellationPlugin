@@ -1,0 +1,5 @@
+sylius_customer_order_cancellation_plugin_shop_order_cancel:
+    path: /order/{orderNumber}/cancel
+    methods: [POST]
+    defaults:
+        _controller: Sylius\CustomerOrderCancellationPlugin\Action\CustomerOrderCancellationAction::__invoke
