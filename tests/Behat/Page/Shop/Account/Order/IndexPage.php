@@ -14,16 +14,16 @@ final class IndexPage extends SymfonyPage implements IndexPageInterface
     {
         $orderData = $this->getOrderData($number);
 
-        $actionButtonsText = $orderData->find('css', 'td:last-child')->getText();
+        $cancelButton = $orderData->find('css', 'td button:contains("Cancel")');
 
-        return strpos($actionButtonsText, 'Cancel');
+        return null !== $cancelButton;
     }
 
     public function clickCancelButtonNextToTheOrder(string $number): void
     {
         $orderData = $this->getOrderData($number);
 
-        $cancelButton = $orderData->find('css', 'td:last-child button:contains("Cancel")');
+        $cancelButton = $orderData->find('css', 'td button:contains("Cancel")');
 
         Assert::notNull($cancelButton, sprintf('There is no cancel button next to order %s', $number));
 
