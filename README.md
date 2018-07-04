@@ -3,9 +3,12 @@
         <img src="https://demo.sylius.com/assets/shop/img/logo.png" />
     </a>
 </p>
+
 <h1 align="center">Customer Order Cancellation Plugin</h1>
 
-This plugin allows customers to cancel the placed order before it is processed.
+<p align="center">This plugin allows customers to cancel the placed order before it is processed.</p>
+
+![Screenshot showing the customer's orders page with cancel buttons](docs/screenshot.png)
 
 ## Installation
 
@@ -30,8 +33,3 @@ This plugin allows customers to cancel the placed order before it is processed.
         requirements:
             _locale: ^[a-z]{2}(?:_[A-Z]{2})?$
     ```
-
-## Usage example
-
-![Usage example](docs/screenshot.png)
-
