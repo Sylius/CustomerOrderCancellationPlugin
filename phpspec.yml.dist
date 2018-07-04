@@ -1,0 +1,4 @@
+suites:
+    main:
+        namespace: Sylius\CustomerOrderCancellationPlugin
+        psr4_prefix: Sylius\CustomerOrderCancellationPlugin
