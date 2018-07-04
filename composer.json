@@ -3,6 +3,17 @@
     "type": "sylius-plugin",
     "description": "Plugin that allows customers to cancel the placed order before it is processed.",
     "license": "MIT",
+    "authors": [
+        {
+            "name": "Bartosz Pietrzak",
+            "homepage": "https://github.com/bartoszpietrzak1994"
+        },
+        {
+            "name": "Kamil Kokot",
+            "email": "kamil@kokot.me",
+            "homepage": "http://kamil.kokot.me"
+        }
+    ],
     "require": {
         "php": "^7.1",
 
@@ -41,7 +52,7 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "1.0-dev"
+            "dev-master": "0.1-dev"
         }
     },
     "config": {
