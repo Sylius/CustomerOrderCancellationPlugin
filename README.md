@@ -14,7 +14,7 @@
 
 So far, once a Customer changed their mind about already placed Order, it was up to the Administrator to cancel the order.
 However, we have asked ourselves a question - why can't Customer cancel the order when it is yet to be paid? Here comes
-Customer Order Cancellation Plugin that allows cancelling the unpaid order straight from the order history view.
+Customer Order Cancellation Plugin that allows canceling the unpaid order straight from the order history view.
 
 ## Installation
 
@@ -41,8 +41,8 @@ Customer Order Cancellation Plugin that allows cancelling the unpaid order strai
     ```
 ## Extension points
 
-Customer Order Cancellation plugin uses Order entity derived from SyliusCoreBundle as well as its already defined states.
+Customer Order Cancellation plugin uses `Order` entity derived from SyliusCoreBundle as well as its already defined states.
 
-Default plugin implementation assumes that an Order can be cancelled by a Customer when its payment state equals 
+Default plugin implementation assumes that an Order can be canceled by a Customer when its payment state is 
 `awaiting_payment` and shipment state equals `ready`. This conditions can be easily changed by creating a custom
-implementation of `CustomerOrderCancellationCheckerInterface` or updating the existing one.
+implementation of `CustomerOrderCancellationCheckerInterface` or decorating the existing one.
