@@ -18,27 +18,20 @@ Customer Order Cancellation Plugin that allows canceling the unpaid order straig
 
 ## Installation
 
-1. Require plugin using Composer:
- 
-    `composer require sylius/customer-order-cancellation-plugin`.
+#### Beware!
 
-2. Add plugin class to your `AppKernel`:
+> This installation instruction assumes that you're using Symfony Flex. If you don't, take a look at the
+[legacy installation instruction](docs/legacy_installation.md). However, we strongly encourage you to use
+Symfony Flex, it's much quicker! :)
 
-    ```php
-    $bundles = [
-       new \Sylius\CustomerOrderCancellationPlugin\SyliusCustomerOrderCancellationPlugin(),
-    ];
-    ```
+To install plugin, just require it with composer:
 
-3. Import routing:
+```bash
+composer require sylius/customer-order-cancellation-plugin
+```
 
-    ```yaml
-    sylius_customer_order_cancellation_plugin:
-        resource: "@SyliusCustomerOrderCancellationPlugin/Resources/config/routing.yml"
-        prefix: /{_locale}
-        requirements:
-            _locale: ^[a-z]{2}(?:_[A-Z]{2})?$
-    ```
+> Remember to allow community recipes with `composer config extra.symfony.allow-contrib true` or during plugin installation process
+
 ## Extension points
 
 Customer Order Cancellation plugin uses `Order` entity derived from SyliusCoreBundle as well as its already defined states.
