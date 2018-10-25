@@ -39,3 +39,8 @@ Customer Order Cancellation plugin uses `Order` entity derived from SyliusCoreBu
 Default plugin implementation assumes that an Order can be canceled by a Customer when its payment state is 
 `awaiting_payment` and shipment state equals `ready`. This conditions can be easily changed by creating a custom
 implementation of `CustomerOrderCancellationCheckerInterface` or decorating the existing one.
+
+## Security issues
+
+If you think that you have found a security issue, please do not use the issue tracker and do not post it publicly. 
+Instead, all security issues must be sent to `security@sylius.com`.
