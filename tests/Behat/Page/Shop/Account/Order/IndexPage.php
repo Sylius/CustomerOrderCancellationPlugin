@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Tests\Sylius\CustomerOrderCancellationPlugin\Behat\Page\Shop\Account\Order;
 
 use Behat\Mink\Element\NodeElement;
-use Sylius\Behat\Page\SymfonyPage;
+use FriendsOfBehat\PageObjectExtension\Page\SymfonyPage;
 use Webmozart\Assert\Assert;
 
 final class IndexPage extends SymfonyPage implements IndexPageInterface
@@ -49,7 +49,7 @@ final class IndexPage extends SymfonyPage implements IndexPageInterface
     /**
      * {@inheritdoc}
      */
-    public function getRouteName()
+    public function getRouteName(): string
     {
        return 'sylius_shop_account_order_index';
     }
