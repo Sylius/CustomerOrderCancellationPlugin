@@ -4,13 +4,12 @@
     <services>
         <!-- Put your Behat services here -->
 
-        <service id="Tests\Sylius\CustomerOrderCancellationPlugin\Behat\Context\Shop\AccountContext">
+        <service id="Tests\Sylius\CustomerOrderCancellationPlugin\Behat\Context\Shop\AccountContext" public="true">
             <argument type="service" id="Tests\Sylius\CustomerOrderCancellationPlugin\Behat\Page\Shop\Account\Order\IndexPageInterface" />
-            <tag name="fob.context_service" />
         </service>
 
         <service id="Tests\Sylius\CustomerOrderCancellationPlugin\Behat\Page\Shop\Account\Order\IndexPageInterface"
                  class="Tests\Sylius\CustomerOrderCancellationPlugin\Behat\Page\Shop\Account\Order\IndexPage"
-                 parent="sylius.behat.symfony_page" />
+                 parent="sylius.behat.symfony_page" public="true" />
     </services>
 </container>

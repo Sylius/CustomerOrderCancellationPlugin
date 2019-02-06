@@ -3,7 +3,7 @@
 default:
     suites:
         ui_cancelling_order:
-            contexts_services:
+            contexts:
                 - sylius.behat.context.hook.doctrine_orm
 
                 - Tests\Sylius\CustomerOrderCancellationPlugin\Behat\Context\Shop\AccountContext
@@ -42,5 +42,6 @@ default:
                 - sylius.behat.context.ui.shop.checkout.payment
                 - sylius.behat.context.ui.shop.checkout.complete
                 - sylius.behat.context.ui.shop.currency
+
             filters:
                 tags: "@cancelling_order && @ui"
