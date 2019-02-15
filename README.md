@@ -6,6 +6,8 @@
 
 <h1 align="center">Customer Order Cancellation Plugin</h1>
 
+<p align="center"><a href="https://sylius.com/plugins/" target="_blank"><img src="https://sylius.com/assets/badge-official-sylius-plugin.png" width="200"></a></p>
+
 <p align="center">This plugin allows customers to cancel the placed order before it is processed.</p>
 
 ![Screenshot showing the customer's orders page with cancel buttons](docs/screenshot.png)
