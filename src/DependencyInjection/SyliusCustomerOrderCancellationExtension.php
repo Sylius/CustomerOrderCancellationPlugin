@@ -32,7 +32,7 @@ final class SyliusCustomerOrderCancellationExtension extends Extension implement
         $container->prependExtensionConfig('sylius_grid', [
             'templates' => [
                 'action' => [
-                    'customer_order_cancel' => '@SyliusCustomerOrderCancellationPlugin/Resources/views/Grid/Action/customer_order_cancel.html.twig',
+                    'customer_order_cancel' => '@SyliusCustomerOrderCancellationPlugin/Grid/Action/customer_order_cancel.html.twig',
                 ],
             ],
             'grids' => [
